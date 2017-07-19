@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/random.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <title>Random</title>
+        
+    </head>
+    <body>
+        <h1>JAPAN GAME</h1>
+        <div id="tabla"></div>
+        <button class=" salir btn btn-info">Salir</button>
+    </body>
+    
+    
+    <script>
+        $(document).ready(function() {
+            $('.salir').click(function() {
+                $(location).attr('href','index.html');
+            });
+            /*$("#abla").html($.get("select.php"));*/
+             $.ajax({
+                type: "GET",
+                url: "select.php",
+                data: '',
+                success: function (data) {
+
+                    $("#tabla").html(data);
+ 
+                    
+                }
+            });
+        });
+    </script>
+</html>

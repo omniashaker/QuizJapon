@@ -1,0 +1,125 @@
+/* css del login */
+.cuerpo{
+     padding-top: 50px;
+     font-family: Montserrat, sans-serif;
+     background-image:url("https://s8.postimg.org/9y9lyus2d/japon001.jpg");
+     background-size: cover;
+}
+
+
+body *{
+    transition:0.2 ease;
+    -o-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -webkit-transition:0.2s ease;
+
+}
+.form{
+    padding: 0 0 1em 0;
+    width:90%;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0,80,150,0.4), rgba(0,0,30,0.3));
+    background-size: cover;
+    border-radius: 5px;
+}
+.form .first-login{
+    color:crimson;
+}
+
+.form .icon-login{
+    width:100px;
+    height: 100px;
+}
+.form .first-row{
+    border-bottom:1px solid rgba(0,200,255,0.4);
+    padding:1em 0;
+    border-radius: 5px 5px 0 0;
+    background: rgba(0,0,0,0.2);
+}
+.form .first-row h2{
+    color:darkred;
+    font-size: 3em;
+    font-family: 'Shojumaru', cursive;
+}
+.form .input-group{
+    padding:0.5em 2em;
+}
+.form .input-group input{
+    border:1px solid #007CFF;
+    height:3em;
+    font-size: 18px;
+}
+.form .input-group .form-control{
+    color:#007CFF;
+}
+ /* color a los iconos del los input*/ 
+.form .input-group .input-group-addon{
+    background-color: #ddd;
+    border:1px solid #007CFF;
+    border-left: none;
+    color:#007CFF;
+}
+          
+input:checked +  {
+    background-color: #2196F3;
+}
+input:focus +  {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked +  {
+    -ms-transform: translateX(13px);
+    -o-transform: translateX(13px);
+    -moz-transform: translateX(13px);
+    -webkit-transform: translateX(13px);
+    transform: translateX(13px);
+}
+          
+.login-btn{
+    width: 90%;
+    background: black;
+    border: 5px solid darkred;
+}
+h3{
+    color:#ddd;
+}
+.sign-up{
+    color:#ddd;
+}
+.sign-up a{
+    color:#007CFF;
+}
+@media(max-width:768px){
+    .form{
+        width:100%;
+    }
+}
+.login{
+    color: red;
+}
+
+.correcto{
+     padding-top: 100px;
+     color: darkred;
+     font-family: 'Shojumaru', cursive;
+     background-image:url("https://s27.postimg.org/hbovbrrcz/image.jpg");
+     background-size: cover;
+     font-size: 3em;
+    
+}
+/* cuenta atras ...*/
+
+#cuenta{
+ font-size: 4em;
+ margin: 75px;
+ color: black;
+ border: 6px solid darkred;
+ -moz-border-radius: 50%;
+ -webkit-border-radius: 30%;
+ border-radius: 50%;
+ padding-left: 50px;
+ width: 200px;
+ height: 200px;
+ background-color:red;
+    
+}

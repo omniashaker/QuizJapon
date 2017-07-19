@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Quizzer</title>
+        <link rel="icon" href="./imagenes/favicon.png" type="image/png">
+        <meta charset="utf-8">
+        <link href="./css/quizzer.css" type="text/css" rel="stylesheet">
+        <script src="./js/jquery-2.2.0.min.js"></script>
+        <script src="./js/underscore-1.8.3.min.js"></script>
+        <script src="./js/quizzer.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1>Jap<span class="letraroja">o</span>Quiz</h1>
+        <h2>¿Sabes tanto como creías?</h2>
+      </div>
+        <div class="countdown"><span class="time_left"></span></div>
+        <div id="myProgress">
+        <div id="myBar" class="bar"></div>
+        </div>
+   
+      <div class="points"><span class="points">0 puntos</span></div>
+    </header>
+    <div class="start">
+      <div class="card">
+        <p>¿Listo para comenzar?</p>
+        <button class="start"><span>Comenzar</span></button>
+      </div>
+    </div>
+    <div class="play">
+      <div class="questions "></div>
+    </div>
+    <div class="finish card">
+      <p class="times_up">¡Se acabó el tiempo!</p>     
+      <p><span></span>Has obtenido</p>
+      <p id="final_points"></p> 
+      <div class="gana"><img src="imagenes/gana.gif"></div>
+      <div class="play_again">
+        <button class="bagain"><span>Volver a jugar</span></button>
+      </div>
+      <button class="salir btn btn-primary">Salir</button>
+      <button class="random btn btn-info">Random</button>     
+    </div>
+    
+  </body>
+</html>
